@@ -33,7 +33,7 @@ const Login = () => {
                      setpassword(e.target.value);
               }}
                required className=' text-white outline-none bg-transparent placeholder:text-gray-400  border-2 border-emerald-600 rounded-full  py-3 px-5 mt-4' type="password" name="" id="" placeholder='Enter password' />
-              <button className=' text-white border-none outline-none  placeholder:text-white  border-2 bg-emerald-600 rounded-full text-xl py-3 px-4 font-bold  w-64  mt-5 text-xl hover:bg-emerald-700 transition-colors duration-300 '>Log in</button>
+              <button className=' text-white border-none outline-none  placeholder:text-white  border-2 bg-emerald-600 rounded-full text-xl py-3 px-4 font-bold  w-64  mt-5 t hover:bg-emerald-700 transition-colors duration-300 '>Log in</button>
 
 
             </form>
