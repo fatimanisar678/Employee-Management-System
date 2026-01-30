@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 
-const Login = () => {
+const Login = ({handleLogin}) => {
     const[email, setEmail]=useState('');
     const[password,setpassword]=useState('');
     const submitHandler =(e)=>{
         e.preventDefault();
-        console.log("hello guys ");
+        handleLogin(email,password)
+        setEmail('');
+         setpassword('');
     }
   return (
     <div className='flex h-screen w-screen  items-center justify-center'>
@@ -16,7 +18,6 @@ const Login = () => {
                  submitHandler(e);
                  console.log("Email is",email)
                  console.log("Password is ",password);
-                 
                  setEmail('');
                  setpassword('');
              }}>
